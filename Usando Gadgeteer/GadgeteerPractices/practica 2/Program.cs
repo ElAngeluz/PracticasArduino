@@ -38,8 +38,6 @@ namespace practica_2
 
             // Use Debug.Print to show messages in Visual Studio's "Output" window during debugging.
             Debug.Print("Program Started");
-
-            
         }
 
         private void Camera_PictureCaptured(Camera sender, GT.Picture e)

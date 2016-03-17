@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "practica 2", "practica 2\practica 2.csproj", "{1154E667-59B2-4B7A-A21D-210F9DF4CDE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3DSCC", "Practica 3\Practica3DSCC.csproj", "{9F6A86C4-EF51-4902-95E0-0E5A0835DA27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorProximidad", "SensorProximidad\SensorProximidad.csproj", "{8AFC6A73-6287-415E-B972-88A276F02E22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThingSpeak", "ThingSpeak\ThingSpeak.csproj", "{67B05A11-3189-4D7F-AABB-7E21BB99F4CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +23,22 @@ Global
 		{1154E667-59B2-4B7A-A21D-210F9DF4CDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1154E667-59B2-4B7A-A21D-210F9DF4CDE8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1154E667-59B2-4B7A-A21D-210F9DF4CDE8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9F6A86C4-EF51-4902-95E0-0E5A0835DA27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6A86C4-EF51-4902-95E0-0E5A0835DA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6A86C4-EF51-4902-95E0-0E5A0835DA27}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9F6A86C4-EF51-4902-95E0-0E5A0835DA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6A86C4-EF51-4902-95E0-0E5A0835DA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6A86C4-EF51-4902-95E0-0E5A0835DA27}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8AFC6A73-6287-415E-B972-88A276F02E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFC6A73-6287-415E-B972-88A276F02E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFC6A73-6287-415E-B972-88A276F02E22}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8AFC6A73-6287-415E-B972-88A276F02E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFC6A73-6287-415E-B972-88A276F02E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFC6A73-6287-415E-B972-88A276F02E22}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{67B05A11-3189-4D7F-AABB-7E21BB99F4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B05A11-3189-4D7F-AABB-7E21BB99F4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B05A11-3189-4D7F-AABB-7E21BB99F4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B05A11-3189-4D7F-AABB-7E21BB99F4CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
