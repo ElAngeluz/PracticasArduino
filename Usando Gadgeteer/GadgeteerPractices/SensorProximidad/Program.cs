@@ -1,4 +1,5 @@
-﻿using Microsoft.SPOT;
+﻿using Gadgeteer.Modules.GHIElectronics;
+using Microsoft.SPOT;
 using GT = Gadgeteer;
 using GTM = Gadgeteer.Modules;
 using Gadgeteer.SocketInterfaces;
@@ -26,9 +27,8 @@ namespace SensorProximidad
                 timer.Tick +=<tab><tab>
                 timer.Start();
             *******************************************************************************************/
-            entrada = extender.CreateAnalogInput(GT.Socket.Pin.Three); 
-            salida = extender.CreateDigitalOutput(GT.Socket.Pin.Five, false);            
-
+            entrada = extender.CreateAnalogInput(GT.Socket.Pin.Three);
+            salida = extender.CreateDigitalOutput(GT.Socket.Pin.Five, false);
             var timer = new GT.Timer(20000);
             timer.Tick += Timer_Tick;
 
@@ -44,18 +44,17 @@ namespace SensorProximidad
 
         private void SetupEthernet()
         {
-            //ethernetJ11D.UseDHCP();
+
             ethernetJ11D.UseStaticIP(
                 "192.168.65.4",
                 "255.255.255.0",
                 "192.168.65.8");
-            string[] dns = { "200.10.150.20","200.10.150.16" };
+            string[] dns = { "200.10.150.20", "200.10.150.16" };
             ethernetJ11D.NetworkSettings.EnableStaticDns(dns);
-            //netif.Open();
-            //netif.EnableDhcp();
+            
             while (!ethernetJ11D.IsNetworkUp)
             {
-                Debug.Print("Waiting for DHCP");
+                Debug.Print("Waiting for NET");
                 Thread.Sleep(250);
             }
         }
@@ -88,7 +87,7 @@ namespace SensorProximidad
         {
             salida.Write(true);
             Debug.Print("proximidad: " + entrada.ReadProportion() + " " + entrada.ReadVoltage());
-            //SetupEthernet();
+            SetupEthernet();
         }
     }
 }
